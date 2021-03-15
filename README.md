@@ -1,2 +1,2 @@
 # zero-ml
-Machine Learning algorithms from sratch using Python and NumPy
+Machine Learning algorithms from scratch using Python and NumPy
