@@ -2,7 +2,7 @@ import os
 import numpy as np
 
 from zeroml.utils.data_transformations import train_test_split
-from zeroml.supervised_learning.linear_models.logistic_regression import LogisticRegression
+from zeroml.supervised_learning.classification.logistic_regression import LogisticRegression
 from zeroml.utils.evaluation_metrics import Accuracy
 
 

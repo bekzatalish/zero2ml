@@ -1,6 +1,6 @@
 import numpy as np
 
-from zeroml.deep_learning.activation_functions import Sigmoid
+from zeroml.utils.activation_functions import Sigmoid
 from zeroml.utils.evaluation_metrics import CrossEntropyLoss, Accuracy
 
 

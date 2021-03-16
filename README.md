@@ -5,4 +5,15 @@ Machine learning algorithms implemented from scratch using Python and NumPy.
 Currently the following machine learning algorithms are implemented.
 
 ### Supervised Learning
-* [Logistic Regression](https://github.com/bekzatalish/zero-ml/tree/main/zeroml/supervised_learning/linear_models/logistic_regression.py)
+
+**Classification**
+* [Logistic Regression](https://github.com/bekzatalish/zero-ml/tree/main/zeroml/supervised_learning/classification/logistic_regression.py)
+
+**Regression**
+* [Linear Regression](https://github.com/bekzatalish/zero-ml/tree/main/zeroml/supervised_learning/regression/linear_regression.py)
+
+### Unsupervised Learning
+TBD.
+
+### Reinforcement Learning
+TBD.
