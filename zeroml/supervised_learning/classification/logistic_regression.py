@@ -30,7 +30,7 @@ class LogisticRegression():
     self.training_loss: list
         List containing training loss for each iteration of model training.
     """
-    def __init__(self, learning_rate=0.1):
+    def __init__(self, learning_rate=0.01):
 
         # Training data
         self.X = None
@@ -56,9 +56,9 @@ class LogisticRegression():
 
         # Loss and loss function
         self.training_loss = None
-        self.__loss = CrossEntropyLoss()
+        self.__loss_function = CrossEntropyLoss()
 
-    def fit(self, X, y, iterations=1000):
+    def fit(self, X, y, iterations=5000):
         """
         Fit the logistic regression model with given training feature inputs.
 
@@ -85,19 +85,20 @@ class LogisticRegression():
         # Initiate loss
         self.training_loss = []
 
+        # Gradient descent
         for iteration in range(iterations):
 
             # Make prediction
             prob = self.__sigmoid( np.dot(self.X, self.W) + self.b)
 
             # Calculate loss and save to training loss list
-            self.training_loss.append( self.__loss(prob, self.y) )
+            self.training_loss.append( self.__loss_function(prob, self.y) )
 
             # Calculate gradients
             dW = 1 / self.samples_num * np.dot(self.X.T, prob - self.y)
             db = 1 / self.samples_num * np.sum(prob - self.y)
 
-            # Update weights
+            # Update weights and intercept
             self.W -= self.learning_rate * dW
             self.b -= self.learning_rate * db
 
@@ -137,7 +138,7 @@ class LogisticRegression():
         Returns
         -------
         mean_accuracy: scalar
-            Mean accuracy of predictions on a given test data.
+            Mean accuracy of predictions on a given data.
         """
         # Make predictions with the trained model
         y_pred = self.predict(X)

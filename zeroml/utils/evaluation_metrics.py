@@ -40,8 +40,55 @@ class Accuracy():
     Returns
     -------
     mean_accuracy: scalar
-        Mean accuracy of predictions on a given test data.
+        Mean accuracy of predictions on a given data.
     """
     def __call__(self, y_pred, y_true):
         accuracy = (y_pred == y_true).mean()
         return accuracy
+
+class MeanSquaredError():
+    """
+    Calculates mean squared error of predictions on a given data.
+
+    Parameters
+    ----------
+    y_pred: array_like
+        Predicted values.
+    y_true: array_like
+        Actual values.
+
+    Returns
+    -------
+    error: scalar
+        Mean squared error of predictions on a given data.
+    """
+    def __call__(self, y_pred, y_true):
+        error = np.abs(y_pred - y_true).mean()
+        return error
+
+class RSquared():
+    """
+    Calculate R^2.
+
+    Parameters
+    ----------
+    y_pred: array_like
+        Predicted values.
+    y_true: array_like
+        Actual values.
+
+    Returns
+    -------
+    r_squared: scalar
+        Calculated R^2.
+    """
+    def __call__(self, y_true, y_pred):
+
+        # Calculate Pearson product-moment correlation coefficient
+        correlation_matrix = np.corrcoef(y_true, y_pred)
+        correlation_xy = correlation_matrix[0,1]
+
+        # Calculate R^2
+        r_squared = correlation_xy**2
+        
+        return r_squared
