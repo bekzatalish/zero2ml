@@ -86,9 +86,9 @@ class RSquared():
 
         # Calculate Pearson product-moment correlation coefficient
         correlation_matrix = np.corrcoef(y_true, y_pred)
-        correlation_xy = correlation_matrix[0,1]
+        correlation = correlation_matrix[0,1]
 
         # Calculate R^2
-        r_squared = correlation_xy**2
-        
+        r_squared = correlation**2
+
         return r_squared
