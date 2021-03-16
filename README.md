@@ -1,7 +1,7 @@
 # zero-ml
 Machine learning algorithms implemented from scratch using Python and NumPy.
 
-## List of Implemented Machine Learning Algorithms
+## List of Machine Learning Algorithms
 The following machine learning algorithms are implemented so far.
 
 ### Supervised Learning
