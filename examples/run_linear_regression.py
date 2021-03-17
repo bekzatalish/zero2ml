@@ -29,7 +29,7 @@ def main():
     train_metrics = model.score(X_train, y_train)
     test_metrics = model.score(X_test, y_test)
 
-    print("Finished training Logistic Regression model.\n")
+    print("Finished training Linear Regression model.\n")
     print("Training MSE: {:0.3f}".format(train_metrics["Mean Squared Error"]))
     print("Testing MSE: {:0.3f}\n".format(test_metrics["Mean Squared Error"]))
     print("Training R^2: {:0.3f}".format(train_metrics["R Squared"]))
