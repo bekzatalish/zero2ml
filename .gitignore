@@ -40,3 +40,7 @@ cover/
 
 # Jupyter
 .ipynb_checkpoints
+
+# Jekyll
+.jekyll-cache/
+_site/
