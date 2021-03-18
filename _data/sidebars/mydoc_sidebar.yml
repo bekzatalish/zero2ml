@@ -74,7 +74,7 @@ entries:
         subfolderitems:
 
         - title: Logistic Regression
-          url: /tag_navigation.html
+          url: /tag_mobile.html
           output: web
 
       - title: Regression
@@ -82,7 +82,7 @@ entries:
         subfolderitems:
 
         - title: Linear Regression
-          url: /tag_formatting.html
+          url: /tag_news.html
           output: web
 
   - title: Unsupervised Learning
