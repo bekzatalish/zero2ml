@@ -1,5 +1,5 @@
 ---
-title: "Machine learning algorithms implemented from scratch using Python and NumPy"
+title: "zero-ml: machine learning algorithms implemented from scratch using Python and NumPy"
 keywords: sample homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
