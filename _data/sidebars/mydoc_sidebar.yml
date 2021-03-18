@@ -74,7 +74,8 @@ entries:
         subfolderitems:
 
         - title: Logistic Regression
-          url: /tag_formatting.html
+          #url: /tag_formatting.html
+          url: /tag_navigation.html
           output: web
 
         # - title: Navigation pages
