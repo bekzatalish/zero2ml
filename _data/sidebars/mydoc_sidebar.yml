@@ -65,7 +65,7 @@ entries:
     folderitems:
 
     - title: Supervised Learning overview
-      url: /mydoc_tag_archives_overview.html
+      url: /supervised_learning_overview.html
       output: web
 
       subfolders:
