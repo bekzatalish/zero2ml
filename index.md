@@ -1,5 +1,5 @@
 ---
-title: "Getting started with the Documentation Theme for Jekyll"
+title: "Machine learning algorithms implemented from scratch using Python and NumPy"
 keywords: sample homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
