@@ -1,4 +1,7 @@
 # zero-ml
+
+[Documentation & Tutorial](https://bekzatalish.github.io/zero-ml/)
+
 Machine learning algorithms implemented from scratch using Python and NumPy.
 
 ## List of Machine Learning Algorithms
