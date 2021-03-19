@@ -20,7 +20,7 @@ INSTALL_REQUIRES = read("requirements.txt").split("\n")
 INSTALL_REQUIRES = [x.rstrip().rstrip() for x in INSTALL_REQUIRES if x.rstrip() != ""]
 
 # Core package components and metadata
-NAME = "zero-ml"
+NAME = "zero2ml"
 VERSION = zeroml.__version__
 DESCRIPTION = zeroml.__description__
 LONG_DESCRIPTION = read("README.md")
