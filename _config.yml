@@ -1,9 +1,9 @@
-repository: bekzatalish/zero-ml
+repository: bekzatalish/zero2ml
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: zero-ml
+topnav_title: zero2ml
 # this appears on the top navigation bar next to the home button
 
 site_title: Machine learning (from scratch) library developed by Bekzat Alish
@@ -12,11 +12,11 @@ site_title: Machine learning (from scratch) library developed by Bekzat Alish
 company_name: Bekzat Alish
 # this appears in the footer
 
-github_editme_path: bekzatalish/zero-ml/tree/gh-pages/
+github_editme_path: bekzatalish/zero2ml/tree/gh-pages/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 # the path must end with `/`
 
-# gitlab_editme_path: bekzatalish/zero-ml/tree/gh-pages
+# gitlab_editme_path: bekzatalish/zero2ml/tree/gh-pages
 # if you're using GitLab, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 google_analytics:
@@ -34,7 +34,7 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: zero-ml
+feedback_subject_line: zero2ml
 
 feedback_email: bekzatalish@gmail.com
 # used as a contact email for the Feedback link in the top navigation bar
