@@ -28,36 +28,12 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: Introduction
-      url: /mydoc_introduction.html
-      output: web, pdf
-
-    - title: Supported features
-      url: /mydoc_supported_features.html
-      output: web, pdf
-
-    - title: About the theme author
-      url: /mydoc_about.html
-      output: web, pdf
-
-    - title: Support
-      url: /mydoc_support.html
-      output: web, pdf
-
   - title: Installation
     output: web, pdf
     folderitems:
 
-    - title: About Ruby, Gems, Bundler, etc.
-      url: /mydoc_about_ruby_gems_etc.html
-      output: web, pdf
-
-    - title: Install Jekyll on Mac
-      url: /mydoc_install_jekyll_on_mac.html
-      output: web, pdf
-
-    - title: Install Jekyll on Windows
-      url: /mydoc_install_jekyll_on_windows.html
+    - title: Installation instructions.
+      url: /installation_instructions.html
       output: web, pdf
 
   - title: Supervised Learning
@@ -74,7 +50,7 @@ entries:
         subfolderitems:
 
         - title: Logistic Regression
-          url: /tag_mobile.html
+          url: /logistic_regression.html
           output: web
 
       - title: Regression
@@ -82,21 +58,21 @@ entries:
         subfolderitems:
 
         - title: Linear Regression
-          url: /tag_news.html
+          url: /linear_regression.html
           output: web
 
   - title: Unsupervised Learning
     output: web, pdf
 
     folderitems:
-    - title: Pages
-      url: /mydoc_pages.html
+    - title: Reinforcement Learning overview
+      url: /unsupervised_learning_overview.html
       output: web, pdf
 
   - title: Reinforcement Learning
     output: web, pdf
 
     folderitems:
-    - title: Sidebar navigation
-      url: /mydoc_sidebar_navigation.html
+    - title: Reinforcement Learning overview
+      url: /reinforcement_learning_overview.html
       output: web, pdf
