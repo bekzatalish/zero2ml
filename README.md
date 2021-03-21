@@ -10,10 +10,10 @@ The following machine learning algorithms are implemented so far.
 ### Supervised Learning
 
 **Classification**
-* [Logistic Regression](https://github.com/bekzatalish/zero2ml/tree/main/zeroml/supervised_learning/classification/logistic_regression.py)
+* [Logistic Regression](https://github.com/bekzatalish/zero2ml/tree/main/zero2ml/supervised_learning/classification/logistic_regression.py)
 
 **Regression**
-* [Linear Regression](https://github.com/bekzatalish/zero2ml/tree/main/zeroml/supervised_learning/regression/linear_regression.py)
+* [Linear Regression](https://github.com/bekzatalish/zero2ml/tree/main/zero2ml/supervised_learning/regression/linear_regression.py)
 
 ### Unsupervised Learning
 TBD.
