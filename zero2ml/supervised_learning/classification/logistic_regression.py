@@ -1,7 +1,7 @@
 import numpy as np
 
-from zeroml.utils.activation_functions import Sigmoid
-from zeroml.utils.evaluation_metrics import CrossEntropyLoss, Accuracy
+from zero2ml.utils.activation_functions import Sigmoid
+from zero2ml.utils.evaluation_metrics import CrossEntropyLoss, Accuracy
 
 
 class LogisticRegression():
