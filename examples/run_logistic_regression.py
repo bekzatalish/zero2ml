@@ -1,8 +1,8 @@
 import os
 import numpy as np
 
-from zeroml.utils.data_transformations import train_test_split
-from zeroml.supervised_learning.classification.logistic_regression import LogisticRegression
+from zero2ml.utils.data_transformations import train_test_split
+from zero2ml.supervised_learning.classification.logistic_regression import LogisticRegression
 
 
 def main():
