@@ -1,8 +1,8 @@
 import numpy as np
 import math
 
-from zeroml.utils.evaluation_metrics import MeanSquaredError, RSquared
-from zeroml.utils.data_transformations import Standardize
+from zero2ml.utils.evaluation_metrics import MeanSquaredError, RSquared
+from zero2ml.utils.data_transformations import Standardize
 
 
 class LinearRegression():
