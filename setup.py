@@ -1,12 +1,19 @@
-"""Setup file for the package.
+"""
+Setup file for the package.
 """
 import os
-import zeroml
+import sys
+import zero2ml
 from setuptools import find_packages, setup
 
 
+# Python version check
+if sys.version_info[:2] < (3, 6):
+    raise RuntimeError("Python version >= 3.6 required.")
+
 here = os.path.abspath(os.path.dirname(__file__))
 
+# Helper function to read textfiles
 def read(filename):
     """
     Construct absolute path to given file, read the file, and return its contents.
@@ -21,12 +28,12 @@ INSTALL_REQUIRES = [x.rstrip().rstrip() for x in INSTALL_REQUIRES if x.rstrip() 
 
 # Core package components and metadata
 NAME = "zero2ml"
-VERSION = zeroml.__version__
-DESCRIPTION = zeroml.__description__
+VERSION = zero2ml.__version__
+DESCRIPTION = zero2ml.__description__
 LONG_DESCRIPTION = read("README.md")
-URL = zeroml.__url__
-AUTHOR = zeroml.__author__
-AUTHER_EMAIL = zeroml.__email__
+URL = zero2ml.__url__
+AUTHOR = zero2ml.__author__
+AUTHOR_EMAIL = zero2ml.__email__
 LICENSE = read("LICENSE")
 PACKAGES = find_packages()
 
@@ -38,9 +45,9 @@ setup(
     long_description=LONG_DESCRIPTION,
     url=URL,
     author=AUTHOR,
-    author_email=AUTHER_EMAIL,
+    author_email=AUTHOR_EMAIL,
     maintainer=AUTHOR,
-    maintainer_email=AUTHER_EMAIL,
+    maintainer_email=AUTHOR_EMAIL,
     license=LICENSE,
     python_requires=">=3.6",
     packages=PACKAGES,
