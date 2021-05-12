@@ -59,7 +59,6 @@ class DecisionTree(ABC):
     root: DecisionNode
         Root node of the decision tree.
     """
-
     def __init__(self, model_type, splitting_criterion, max_depth):
         """
         Create a decision tree with a set depth limit.
