@@ -229,7 +229,7 @@ class DecisionTree(ABC):
         X: array_like (m, n)
             Features dataset with shape m examples and n features.
         y: array_like(m,)
-            Ttarget dataset with m examples.
+            Target dataset with m examples.
 
         Returns
         -------
