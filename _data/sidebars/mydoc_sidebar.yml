@@ -45,20 +45,24 @@ entries:
       output: web
 
       subfolders:
-      - title: Classification
-        output: web
-        subfolderitems:
-
-        - title: Logistic Regression
-          url: /logistic_regression.html
-          output: web
-
-      - title: Regression
+      - title: Linear
         output: web
         subfolderitems:
 
         - title: Linear Regression
           url: /linear_regression.html
+          output: web
+
+        - title: Logistic Regression
+          url: /logistic_regression.html
+          output: web
+
+      - title: Tree-Based
+        output: web
+        subfolderitems:
+
+        - title: Decision Tree
+          url: /decision_tree.html
           output: web
 
   - title: Unsupervised Learning
