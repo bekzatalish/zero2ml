@@ -14,7 +14,7 @@ def main():
     # Read dataset
     data = np.genfromtxt(data_path, delimiter=',', skip_header=1)
     X = data[:,:-1]
-    y = data[:,-1].astype(int)
+    y = data[:,-1].astype(float)
 
     # Train test split
     X_train, y_train, X_test, y_test = train_test_split(X, y, test_size=0.2, random_state=21)
