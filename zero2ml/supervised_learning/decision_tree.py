@@ -290,6 +290,10 @@ class DecisionTreeClassifier(DecisionTree):
             The function to measure the quality of splits.
         target: array_like (m,)
             Array of target classes given as 0, 1, etc.
+
+        Returns
+        -------
+        Floating point number representing the impurity.
         """
         if criterion == 'gini':
             return gini_impurity(target)
@@ -340,6 +344,10 @@ class DecisionTreeRegressor(DecisionTree):
             The function to measure the quality of splits.
         target: array_like (m,)
             Array of target values.
+
+        Returns
+        -------
+        Floating point number representing the impurity.
         """
         if criterion == 'variance':
             return variance(target)
