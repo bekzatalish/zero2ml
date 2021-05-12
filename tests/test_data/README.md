@@ -28,3 +28,15 @@ Features represent the following information for each block:
 4. number of households within a block
 5. median income within a block
 6. target (median house value in USD within a block)
+
+## real_estate.csv
+
+Link: [Taiwan Real Estate](https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set)
+
+Features represent the following information for each house:
+1. house age (in years)
+2. distance to the nearest MRT station (in meters)
+3. number of convenience stores nearby
+4. latitude
+5. longitude
+6. target (house price of unit area, in 10000 New Taiwan Dollar/Ping)
