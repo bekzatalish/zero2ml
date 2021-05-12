@@ -30,7 +30,7 @@ def main():
     test_results = model.score(X_test, y_test)
 
     print("Finished training Classification Tree model.\n")
-    print("Training accuracy: {:0.6f}".format(test_results))
+    print("Training accuracy: {:0.6f}".format(train_results))
     print("Testing accuracy: {:0.6f}".format(test_results))
 
 if __name__ == "__main__":

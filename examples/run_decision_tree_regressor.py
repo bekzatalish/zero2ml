@@ -30,7 +30,7 @@ def main():
     test_results = model.score(X_test, y_test)
 
     print("Finished training Regression Tree model.\n")
-    print("Training R^2: {:0.6f}".format(test_results))
+    print("Training R^2: {:0.6f}".format(train_results))
     print("Testing R^2: {:0.6f}".format(test_results))
 
 if __name__ == "__main__":
