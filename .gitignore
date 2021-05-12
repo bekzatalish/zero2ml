@@ -42,5 +42,22 @@ cover/
 .ipynb_checkpoints
 
 # Jekyll
-.jekyll-cache/
 _site/
+.sass-cache/
+.jekyll-metadata
+.jekyll-cache/
+
+# pdf
+_pdf
+
+# IntelliJ
+.idea
+
+# PHP
+vendor/
+
+# Git
+.bundle/
+
+# MacOS
+.DS_Store
