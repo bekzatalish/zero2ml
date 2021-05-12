@@ -7,7 +7,6 @@ class DecisionNode:
     """
     Class to represent a single node in a decision tree.
     """
-
     def __init__(self, left, right, decision_function, node_value=None):
         """
         Create a decision function to select between left and right nodes.
