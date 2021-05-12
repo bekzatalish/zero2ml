@@ -44,26 +44,21 @@ entries:
       url: /supervised_learning_overview.html
       output: web
 
-      subfolders:
-      - title: Linear
-        output: web
-        subfolderitems:
+    - title: Decision Tree
+      url: /decision_tree.html
+      output: web
 
-        - title: Linear Regression
-          url: /linear_regression.html
-          output: web
+    - title: k-Nearest Neighbor
+      url: /knn.html
+      output: web
 
-        - title: Logistic Regression
-          url: /logistic_regression.html
-          output: web
+    - title: Linear Regression
+      url: /linear_regression.html
+      output: web
 
-      - title: Tree-Based
-        output: web
-        subfolderitems:
-
-        - title: Decision Tree
-          url: /decision_tree.html
-          output: web
+    - title: Logistic Regression
+      url: /logistic_regression.html
+      output: web
 
   - title: Unsupervised Learning
     output: web, pdf
