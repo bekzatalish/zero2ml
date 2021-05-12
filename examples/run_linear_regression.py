@@ -2,7 +2,7 @@ import os
 import numpy as np
 
 from zero2ml.utils.data_transformations import train_test_split
-from zero2ml.supervised_learning.regression.linear_regression import LinearRegression
+from zero2ml.supervised_learning.linear_regression import LinearRegression
 
 
 def main():
