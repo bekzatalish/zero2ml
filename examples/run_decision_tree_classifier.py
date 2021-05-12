@@ -29,6 +29,7 @@ def main():
     train_results = model.score(X_train, y_train)
     test_results = model.score(X_test, y_test)
 
+    print("Finished training Classification Tree model.\n")
     print("Training accuracy: {:0.6f}".format(test_results))
     print("Testing accuracy: {:0.6f}".format(test_results))
 
