@@ -25,15 +25,13 @@ def main():
     # Fit model
     model.fit(X_train, y_train)
 
-    # Calculate train and test accurracy
-    train_metrics = model.score(X_train, y_train)
-    test_metrics = model.score(X_test, y_test)
+    # Calculate train and test R^2
+    train_results = model.score(X_train, y_train)
+    test_results = model.score(X_test, y_test)
 
     print("Finished training Linear Regression model.\n")
-    print("Training MSE: {:0.3f}".format(train_metrics["Mean Squared Error"]))
-    print("Testing MSE: {:0.3f}\n".format(test_metrics["Mean Squared Error"]))
-    print("Training R^2: {:0.3f}".format(train_metrics["R Squared"]))
-    print("Testing R^2: {:0.3f}".format(test_metrics["R Squared"]))
+    print("Training R^2: {:0.3f}".format(train_results))
+    print("Testing R^2: {:0.3f}".format(test_results))
 
 if __name__ == "__main__":
     main()

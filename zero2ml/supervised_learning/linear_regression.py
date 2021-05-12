@@ -132,7 +132,7 @@ class LinearRegression():
 
     def score(self, X, y):
         """
-        Calculates evaluation metrics for predictions on a given data.
+        Calculate coefficient of determination of predictions on a given data.
 
         Parameters
         ----------
@@ -143,8 +143,7 @@ class LinearRegression():
 
         Returns
         -------
-        evaluation_metrics: dict
-            Evaluation metrics for predictions on a given data.
+        Coefficient of determination of predictions.
         """
         # Make predictions with the trained model
         y_pred = self.predict(X)
@@ -157,10 +156,4 @@ class LinearRegression():
         R2 = RSquared()
         r_squared = R2(y_pred, y)
 
-        # Construct dictionary containing all evaluation metrics
-        evaluation_metrics = {
-            "Mean Squared Error": mean_squared_error,
-            "R Squared": r_squared
-        }
-
-        return evaluation_metrics
+        return r_squared

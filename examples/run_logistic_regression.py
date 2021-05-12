@@ -26,12 +26,12 @@ def main():
     model.fit(X_train, y_train)
 
     # Calculate train and test accurracy
-    train_accuracy = model.score(X_train, y_train)
-    test_accuracy = model.score(X_test, y_test)
+    train_results = model.score(X_train, y_train)
+    test_results = model.score(X_test, y_test)
 
     print("Finished training Logistic Regression model.\n")
-    print("Training accuracy: {:0.3f}".format(train_accuracy))
-    print("Testing accuracy: {:0.3f}".format(test_accuracy))
+    print("Training accuracy: {:0.3f}".format(train_results))
+    print("Testing accuracy: {:0.3f}".format(test_results))
 
 if __name__ == "__main__":
     main()

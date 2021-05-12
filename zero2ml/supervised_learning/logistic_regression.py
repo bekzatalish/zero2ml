@@ -126,7 +126,7 @@ class LogisticRegression():
 
     def score(self, X, y):
         """
-        Calculates mean accuracy of predictions on a given data.
+        Calculate mean accuracy of predictions on a given data.
 
         Parameters
         ----------
@@ -137,8 +137,7 @@ class LogisticRegression():
 
         Returns
         -------
-        mean_accuracy: scalar
-            Mean accuracy of predictions on a given data.
+        Mean accuracy of predictions on a given data.
         """
         # Make predictions with the trained model
         y_pred = self.predict(X)
