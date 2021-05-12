@@ -256,6 +256,8 @@ class DecisionTreeClassifier(DecisionTree):
     """
     def __init__(self, splitting_criterion="gini", max_depth=4):
         """
+        Create a decision tree classification model.
+
         splitting_criterion: str
             The function to measure the quality of splits.
         max_depth: int
@@ -310,6 +312,8 @@ class DecisionTreeRegressor(DecisionTree):
     """
     def __init__(self, splitting_criterion="variance", max_depth=4):
         """
+        Create a decision tree regression model.
+
         splitting_criterion: str
             The function to measure the quality of splits.
         max_depth: int
