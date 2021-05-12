@@ -8,12 +8,10 @@ Machine learning algorithms implemented from scratch using Python and NumPy.
 
 ### Supervised Learning
 
-**Linear**
+* [Decision Tree](https://github.com/bekzatalish/zero2ml/tree/main/zero2ml/supervised_learning/decision_tree.py)
+* [k-Nearest Neighbor](https://github.com/bekzatalish/zero2ml/blob/main/zero2ml/supervised_learning/knn.py)
 * [Linear Regression](https://github.com/bekzatalish/zero2ml/tree/main/zero2ml/supervised_learning/linear_regression.py)
 * [Logistic Regression](https://github.com/bekzatalish/zero2ml/tree/main/zero2ml/supervised_learning/logistic_regression.py)
-
-**Tree Based**
-* [Decision Tree](https://github.com/bekzatalish/zero2ml/tree/main/zero2ml/supervised_learning/decision_tree.py)
 
 ### Unsupervised Learning
 TBD.
