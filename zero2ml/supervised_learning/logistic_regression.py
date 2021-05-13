@@ -1,10 +1,11 @@
 import numpy as np
 
+from zero2ml.supervised_learning._base import BaseModel
 from zero2ml.utils.activation_functions import Sigmoid
-from zero2ml.utils.evaluation_metrics import CrossEntropyLoss, Accuracy
+from zero2ml.utils.evaluation_metrics import CrossEntropyLoss
 
 
-class LogisticRegression():
+class LogisticRegression(BaseModel):
     """
     Logistic Regression classifier.
 
@@ -31,6 +32,9 @@ class LogisticRegression():
         List containing training loss for each iteration of model training.
     """
     def __init__(self, learning_rate=0.01):
+
+        # Specify model type
+        self.model_type = "regressor"
 
         # Training data
         self.X = None
@@ -123,27 +127,3 @@ class LogisticRegression():
         pred = (prob > 0.5).astype(int)
 
         return pred
-
-    def score(self, X, y):
-        """
-        Calculate mean accuracy of predictions on a given data.
-
-        Parameters
-        ----------
-        X: array_like
-            Training features.
-        y: array_like
-            Training labels.
-
-        Returns
-        -------
-        Mean accuracy of predictions on a given data.
-        """
-        # Make predictions with the trained model
-        y_pred = self.predict(X)
-
-        # Calculate accuracy
-        accuracy = Accuracy()
-        mean_accuracy = accuracy(y_pred, y)
-
-        return mean_accuracy

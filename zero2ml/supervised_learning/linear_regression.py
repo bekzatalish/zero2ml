@@ -1,11 +1,12 @@
 import numpy as np
 import math
 
-from zero2ml.utils.evaluation_metrics import MeanSquaredError, RSquared
+from zero2ml.supervised_learning._base import BaseModel
+from zero2ml.utils.evaluation_metrics import MeanSquaredError
 from zero2ml.utils.data_transformations import Standardize
 
 
-class LinearRegression():
+class LinearRegression(BaseModel):
     """
     Multiple Linear Regression with input features standardization.
 
@@ -34,6 +35,9 @@ class LinearRegression():
         List containing training loss for each iteration of model training.
     """
     def __init__(self, learning_rate=0.01):
+
+        # Specify model type
+        self.model_type = "regressor"
 
         # Training data
         self.X = None
@@ -129,31 +133,3 @@ class LinearRegression():
         pred = np.dot(X_norm, self.W) + self.b
 
         return pred
-
-    def score(self, X, y):
-        """
-        Calculate coefficient of determination of predictions on a given data.
-
-        Parameters
-        ----------
-        X: array_like
-            Training features.
-        y: array_like
-            Training values.
-
-        Returns
-        -------
-        Coefficient of determination of predictions.
-        """
-        # Make predictions with the trained model
-        y_pred = self.predict(X)
-
-        # Calculate mean squared error
-        MSE = MeanSquaredError()
-        mean_squared_error = MSE(y_pred, y)
-
-        # Calculate R^2
-        R2 = RSquared()
-        r_squared = R2(y_pred, y)
-
-        return r_squared
