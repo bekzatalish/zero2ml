@@ -34,7 +34,7 @@ class LogisticRegression(BaseModel):
     def __init__(self, learning_rate=0.01):
 
         # Specify model type
-        self.model_type = "regressor"
+        self.model_type = "classifier"
 
         # Training data
         self.X = None
