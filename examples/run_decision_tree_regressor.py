@@ -9,7 +9,7 @@ def main():
 
     # Construct path to dataset
     root_directory_path = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
-    data_path = os.path.join(root_directory_path, "tests", "test_data", "housing.csv")
+    data_path = os.path.join(root_directory_path, "tests", "test_data", "real_estate.csv")
 
     # Read dataset
     data = np.genfromtxt(data_path, delimiter=',', skip_header=1)
