@@ -6,7 +6,7 @@ output: web
 topnav_title: zero2ml
 # this appears on the top navigation bar next to the home button
 
-site_title: Machine learning (from scratch) library developed by Bekzat Alish
+site_title: Machine learning (from scratch) by Bekzat Alish
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: Bekzat Alish
@@ -22,6 +22,12 @@ github_editme_path: bekzatalish/zero2ml/tree/gh-pages/
 google_analytics:
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
+gems:
+- jekyll-seo-tag
+
+plugins:
+- jekyll-seo-tag
+    
 host: 127.0.0.1
 # the preview server used. Leave as is.
 
@@ -107,6 +113,8 @@ sidebars:
 - product2_sidebar
 - other
 
+# metadata
+title: Machine learning (from scratch) by Bekzat Alish
 description: "Machine learning algorithms implemented from scratch using Python and NumPy."
 # the description is used in the feed.xml file
 
